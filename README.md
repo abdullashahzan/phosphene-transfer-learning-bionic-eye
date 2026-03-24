@@ -20,9 +20,13 @@ Cortical visual prostheses (bionic eyes) restore vision by stimulating the visua
 
 ```
 ├── phosphene_transfer_learning.ipynb    # Main research notebook
-├── Research_Paper.md                   # Full research paper
+├── phosphene_transfer_learning_paper.pdf # Full research paper
 ├── README.md                           # This file
-└── data/                               # CIFAR-10 data (downloaded automatically)
+├── LICENSE                             # MIT License
+└── images/                             # Visualization charts
+    ├── phosphene_simulation_samples.png
+    ├── per_class_accuracy_comparision.png
+    └── training_test_loss_and_accuracy.png
 ```
 
 ## 🛠️ How to Run
@@ -40,12 +44,16 @@ Cortical visual prostheses (bionic eyes) restore vision by stimulating the visua
 3. Open `phosphene_transfer_learning.ipynb` in Jupyter/Colab
 4. Run all cells
 
-## 🔬 Methodology
+## 📸 Visualizations
 
-1. **Phosphene Simulator**: Converts natural images to simulate bionic eye vision (blur → downsample → threshold → noise)
-2. **Model**: EfficientNet-B0 (pretrained on ImageNet)
-3. **Comparison**: Transfer learning vs training from scratch
-4. **Dataset**: CIFAR-10 (10 object classes)
+### Phosphene Simulation Samples
+![Phosphene Simulation](images/phosphene_simulation_samples.png)
+
+### Training Results
+![Training Results](images/training_test_loss_and_accuracy.png)
+
+### Per-Class Accuracy
+![Per-Class Accuracy](images/per_class_accuracy_comparision.png)
 
 ## 📈 Sample Results
 
@@ -64,22 +72,19 @@ Cortical visual prostheses (bionic eyes) restore vision by stimulating the visua
 | ship | 76.5% | 73.2% | +3.3% |
 | truck | 85.2% | 77.4% | +7.8% |
 
+## 🔬 Methodology
+
+1. **Phosphene Simulator**: Converts natural images to simulate bionic eye vision (blur → downsample → threshold → noise)
+2. **Model**: EfficientNet-B0 (pretrained on ImageNet)
+3. **Comparison**: Transfer learning vs training from scratch
+4. **Dataset**: CIFAR-10 (10 object classes)
+
 ## 💡 Key Findings
 
 1. ✅ Transfer learning outperforms training from scratch by **6.9 percentage points**
 2. ✅ Pretrained ImageNet features transfer well to phosphene vision
 3. ✅ Improvement is consistent across ALL object classes
 4. ✅ This approach could enhance future bionic eye systems
-
-## 📄 Research Paper
-
-The full research paper is available in `Research_Paper.md`, covering:
-- Introduction & Background
-- Literature Review
-- Methodology
-- Results & Analysis
-- Discussion & Conclusions
-- References
 
 ## 🎓 About This Research
 
@@ -96,7 +101,7 @@ The full research paper is available in `Research_Paper.md`, covering:
 
 ## 📝 License
 
-This is an open-source research project. Feel free to use and cite!
+MIT License - See LICENSE file for details
 
 ## 🙏 Acknowledgments
 
